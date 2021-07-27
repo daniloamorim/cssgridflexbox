@@ -1,0 +1,35 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(52, 138, 212);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h"
+                                     "m a"
+                                     "f f";
+}
+
+header {
+    background-color: rgb(216, 118, 216);
+    grid-area: h;
+}
+
+main {
+    background-color: rgb(94, 197, 163);
+    grid-area: m;
+}
+
+aside {
+    background-color: rgb(218, 164, 99);
+    grid-area: a;
+}
+
+footer {
+    background-color: rgb(184, 44, 44);
+    grid-area: f;
+}
